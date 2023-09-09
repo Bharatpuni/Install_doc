@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Git checkout
+git checkout <branch_name>
+
+# Maven compile
+mvn compile
+
+# Maven package
+mvn package
+
+# Deploy to Tomcat
+# Replace 'webapp.war' with your generated WAR file name and adjust the Tomcat server details
+cp target/webapp.war /path/to/tomcat/webapps/
